@@ -7,30 +7,25 @@ export default defineConfig({
   lang: 'zh-CN',
   
   themeConfig: {
-    // 顶部导航
     nav: [
       { text: '首页', link: '/' },
-      { text: '文稿', link: '/posts/openclaw-report' }
+      // 修正：现在文件在根目录，路径去掉 /posts/
+      { text: '文稿', link: '/openclaw-report' }
     ],
 
-    // 自动化侧边栏：自动读取 posts 文件夹下的 md 文件
     sidebar: generateSidebar({
-      documentRootPath: '/', 
-      scanStartPath: 'posts', 
-      resolvePath: '/posts/', // 必须确保生成的 href 是 /posts/xxx
+      documentRootPath: '/',
+      scanStartPath: '.', // 修正：从根目录开始扫描
+      resolvePath: '/',   // 修正：链接直接指向根
       useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true,
-      includeRootIndexFile: false,
-      hyphenToSpace: true,
+      excludeFiles: ['index.md'], // 排除掉首页，不要在侧边栏显示首页链接
       collapsed: false,
     }),
 
-
     socialLinks: [
-      { icon: 'BlackClaw', link: 'https://blackclaw.monstercode.cn/' }
+      { icon: 'github', link: 'https://github.com/chetrosie' }
     ],
-
-    // 开启本地搜索功能，方便你以后查找博文
+    
     search: {
       provider: 'local'
     }
