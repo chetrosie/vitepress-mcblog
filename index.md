@@ -26,12 +26,10 @@ features:
 ---
 
 <style>
-/* 强制副标题不换行，保持视觉张力 */
 .VPHero .text {
   max-width: 100% !important;
   white-space: nowrap;
 }
-/* 适配移动端：如果屏幕太窄则允许换行，防止溢出 */
 @media (max-width: 768px) {
   .VPHero .text {
     white-space: normal;
