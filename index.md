@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "Black Bad Code"
-  text: "基于 VitePress 构建"
-  tagline: "If it creates emotion, it's real."
+  text: "「ALL FOR ONE.ONE FOR ALL」"
+  tagline: "如果它能产生情感，那么它就是真实的。"
   actions:
     - theme: brand
       text: 开始阅读
