@@ -9,15 +9,14 @@ export default defineConfig({
     // 官方默认导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/markdown-examples' }
+      { text: '文档', link: '/posts/posts.md' }
     ],
     // 官方默认侧边栏
     sidebar: [
       {
-        text: '示例',
+        text: '文稿',
         items: [
-          { text: 'Markdown 示例', link: '/markdown-examples' },
-          { text: '运行时 API 示例', link: '/api-examples' }
+          { text: 'OpenClaw深度研究报告', link: '/posts/OpenClaw In-Depth Research Report' }
         ]
       }
     ],
