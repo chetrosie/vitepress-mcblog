@@ -23,7 +23,7 @@ export default defineConfig({
     }),
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/chetrosie' }
+      { icon: 'github', link: 'https://blackclaw.monstercode.cn' }
     ],
     
     search: {
