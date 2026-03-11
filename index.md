@@ -3,16 +3,13 @@
 layout: home
 
 hero:
-  name: "VideCode"
-  text: "AI Vibe Code"
-  tagline: My great project tagline
+  name: "Black Bad Code"
+  text: "基于 VitePress 构建"
+  tagline: "If it creates emotion, it's real."
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 开始阅读
       link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 features:
   - title: Feature A
