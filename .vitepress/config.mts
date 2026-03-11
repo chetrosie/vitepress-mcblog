@@ -14,7 +14,7 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '文章', link: '/markdown-examples' }
+      { text: '文章', link: '/guide/OpenClaw%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8Av1.0.0.md' }
     ],
     docFooter: {
       prev: '上一页',
