@@ -1,4 +1,4 @@
-kimport { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
 
 export default defineConfig({
@@ -17,11 +17,10 @@ export default defineConfig({
       scanStartPath: 'posts',
       resolvePath: '/posts/',
       useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true,
       collapsed: false
     }),
     socialLinks: [
-      { icon: 'BlackClaw', link: 'https://blackclaw.monstercode.cn/' }
+      { icon: 'BlackClaw', link: 'https://blackclaw.monstercode.cn' }
     ]
   }
 })
