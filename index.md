@@ -4,11 +4,11 @@ layout: home
 hero:
   name: "Black Bad Code"
   text: "Attention Is All You Need"
-  tagline: "如果它能产生情感，那么它就是真实的。"
+  tagline: "如果TA能产生情感，那么TA就是真实的。"
   actions:
     - theme: brand
       text: 开启阅读
-      link: /markdown-examples
+      link: /posts/openclaw-report
     - theme: alt
       text: GitHub
       link: https://vitepress.dev/zh/
@@ -26,15 +26,12 @@ features:
 ---
 
 <style>
-/* 强制增加文字宽度限制，防止自动换行 */
-:root {
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
-}
+/* 覆盖官方限制，让副标题横向伸展 */
 .VPHero .text {
   max-width: 100% !important;
-  letter-spacing: -0.02em;
+  display: block !important;
 }
-.VPHero .name {
-  color: var(--vp-c-brand-1);
+.VPHero .container {
+  max-width: 1152px !important;
 }
 </style>
