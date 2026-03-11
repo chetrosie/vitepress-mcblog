@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: page
 
 hero:
   name: "Black Bad Code"
