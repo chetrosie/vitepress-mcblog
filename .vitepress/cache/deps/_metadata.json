@@ -1,56 +1,35 @@
 {
-  "hash": "dcde9d52",
-  "configHash": "ae1a2f90",
-  "lockfileHash": "eecf0e0e",
-  "browserHash": "adbee52b",
+  "hash": "1540687b",
+  "configHash": "61401b28",
+  "lockfileHash": "0f543ac4",
+  "browserHash": "d8146fcb",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "cbf835f0",
+      "fileHash": "6dddbde3",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "20486fe4",
+      "fileHash": "96555d97",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "8eced716",
-      "needsInterop": false
-    },
-    "vitepress > @vueuse/integrations/useFocusTrap": {
-      "src": "../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
-      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "3b182bff",
-      "needsInterop": false
-    },
-    "vitepress > mark.js/src/vanilla.js": {
-      "src": "../../../node_modules/mark.js/src/vanilla.js",
-      "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "05558201",
-      "needsInterop": false
-    },
-    "vitepress > minisearch": {
-      "src": "../../../node_modules/minisearch/dist/es/index.js",
-      "file": "vitepress___minisearch.js",
-      "fileHash": "2b46dabf",
+      "fileHash": "17917f73",
       "needsInterop": false
     },
     "vitepress-theme-teek": {
       "src": "../../../node_modules/vitepress-theme-teek/es/index.mjs",
       "file": "vitepress-theme-teek.js",
-      "fileHash": "9354d6bb",
+      "fileHash": "b6f8b42c",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-6PF7CNRE": {
-      "file": "chunk-6PF7CNRE.js"
-    },
     "chunk-AE36M7DF": {
       "file": "chunk-AE36M7DF.js"
     },
