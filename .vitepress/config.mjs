@@ -10,17 +10,21 @@ export default defineConfig({
     // 顶部导航
     nav: [
       { text: '首页', link: '/' },
-      { text: '文稿', link: '/posts' }
+      { text: '文稿', link: '/posts/openclaw-report' }
     ],
 
     // 自动化侧边栏：自动读取 posts 文件夹下的 md 文件
     sidebar: generateSidebar({
-      documentRootPath: '/',     // 保持根目录扫描
-      scanStartPath: 'posts',    // 扫描 posts 文件夹
-      resolvePath: '/posts/',    // 关键：确保生成的链接带上 /posts/ 前缀
+      documentRootPath: '/', 
+      scanStartPath: 'posts', 
+      resolvePath: '/posts/', // 必须确保生成的 href 是 /posts/xxx
       useTitleFromFileHeading: true,
+      useFolderTitleFromIndexFile: true,
+      includeRootIndexFile: false,
+      hyphenToSpace: true,
       collapsed: false,
     }),
+
 
     socialLinks: [
       { icon: 'BlackClaw', link: 'https://blackclaw.monstercode.cn/' }
