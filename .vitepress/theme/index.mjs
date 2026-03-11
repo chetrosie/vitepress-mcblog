@@ -1,7 +1,3 @@
-import TeekTheme from 'vitepress-theme-teek'
-// 引入核心样式
-import 'vitepress-theme-teek/index.css'
+import DefaultTheme from 'vitepress/theme'
 
-export default {
-  ...TeekTheme
-}
+export default DefaultTheme
