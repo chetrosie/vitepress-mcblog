@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 深度阅读
-      link: /posts/openclaw-report
+      link: /openclaw-report
     - theme: alt
       text: BlackClaw (内测中)
       link: https://blackclaw.monstercode.cn/
