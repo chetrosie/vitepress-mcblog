@@ -11,13 +11,10 @@ export default defineConfig({
       { text: '文档', link: '/guide/api-examples' }
     ],
 
-    // 关键：关闭 Teek 自带的 Banner，让它回归官方 Hero 布局
+    // 彻底删掉之前那一长串 teek.home.banner 配置
+    // 只保留最基础的配置
     teek: {
-      home: {
-        banner: {
-          show: false // 彻底关闭上方的大黑块
-        }
-      }
+      // 如果你想完全回归官方样式，尝试把整个 teek 节点留空，或者只放这些：
     },
 
     socialLinks: [
