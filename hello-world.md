@@ -8,6 +8,6 @@ tags:
   - AI
 ---
 
-# 欢迎来到 Black Bad Code
+# Black Bad Code｜Attention
 
 这是我通过 AI 协助，在 Mac Mini 上部署的第一个博客系统。
