@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitepress'
+kimport { defineConfig } from 'vitepress'
+import { generateSidebar } from 'vitepress-sidebar'
 
 export default defineConfig({
   title: "Black Bad Code",
@@ -10,16 +11,17 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '文档', link: '/posts/openclaw-report' }
     ],
-    sidebar: [
-      {
-        text: '深度研究',
-        items: [
-          { text: 'OpenClaw 研究报告', link: '/posts/openclaw-report' }
-        ]
-      }
-    ],
+    // 自动读取 posts 文件夹下的所有 md 文件
+    sidebar: generateSidebar({
+      documentRootPath: '/',
+      scanStartPath: 'posts',
+      resolvePath: '/posts/',
+      useTitleFromFileHeading: true,
+      useFolderTitleFromIndexFile: true,
+      collapsed: false
+    }),
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/chetrosie' }
+      { icon: 'BlackClaw', link: 'https://blackclaw.monstercode.cn/' }
     ]
   }
-}) // <--- 报错就是因为这里可能少了闭合括号
+})
