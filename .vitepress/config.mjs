@@ -6,45 +6,27 @@ export default defineConfig({
   lang: 'zh-CN',
   
   themeConfig: {
-    // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '文稿', link: '/posts/' },
-      { text: '关于', link: '/about' }
+      { text: '文档', link: '/guide/api-examples' }
     ],
 
-    // Teek 主题核心配置
+    // 关键：关闭 Teek 自带的 Banner，让它回归官方 Hero 布局
     teek: {
       home: {
         banner: {
-          show: true,
-          title: "Black Bad Code",
-          subTitle: "Attention Is All You Need.「ALL FOR ONE」",
-          // 你的 R2 图片链接
-          bgImage: 'https://pub-d866b99d5d61492a94516a7d4395c26d.r2.dev/steve-jobs-macintosh-apple-success-story-financial-value-market.jpg',
-          coverStyle: 'full', // 全屏 Banner 样式
-          bannerMask: 0.4    // 背景遮罩深浅（0.1-0.9），确保文字清晰
-        },
-        footer: {
-          show: true,
-          message: 'Released under the MIT License.',
-          copyright: 'Copyright © 2026-present Chuen'
+          show: false // 彻底关闭上方的大黑块
         }
       }
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/chetrosie' }
+      { icon: 'github', link: 'https://monstercode.cn' }
     ]
   },
 
-  // 这里的 vite 配置是 Cloudflare 部署成功的关键，不要删除
   vite: {
-    optimizeDeps: {
-      exclude: ['vitepress']
-    },
-    ssr: {
-      noExternal: ['vitepress-theme-teek']
-    }
+    optimizeDeps: { exclude: ['vitepress'] },
+    ssr: { noExternal: ['vitepress-theme-teek'] }
   }
 })
